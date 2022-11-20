@@ -22,7 +22,7 @@ body{
     justify-content: center;
     top: 0;
     position: fixed;
-    z-index: 9999;
+    z-index: 2;
 }
 
 .container{
@@ -266,7 +266,7 @@ body{
 .rule__text p{
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
 }
 
 .rule__content img{
@@ -454,7 +454,12 @@ body{
 
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
+    .header{
+        position: static;
+    }
+
     .header__menu ul{
+        position: absolute;
         right: 0;
         top: 0;
         height: 100vh;
@@ -479,11 +484,11 @@ body{
     }
 
     .hero{
-        height: 450px;
+        height: 400px;
     }
 
     .hero__item{
-        top: 50px;
+        top: 30px;
     }
 
     .hero__text{
