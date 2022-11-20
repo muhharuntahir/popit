@@ -5,7 +5,7 @@ menuToggle.addEventListener('click', function (){
     navBar.classList.toggle('slide-menu');
 });
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -13,8 +13,8 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("hero__wrapper");
+    let i;
+    const slides = document.getElementsByClassName("hero__wrapper");
     if (n > slides.length)
     {
         slideIndex = 1;
