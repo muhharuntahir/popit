@@ -164,6 +164,7 @@ body{
     gap: 15px;
     width: 90%;
     text-align: center;
+    z-index: -999;
 }
 
 .about__wrapper h2{
@@ -626,6 +627,35 @@ body{
 
 /* Small Device = 320px */
 @media only screen and (max-width: 479px) {
+    .header{
+        position: static;
+    }
+
+    .header__menu ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        justify-content: space-evenly;
+        z-index: -1;
+        align-items: center;
+        width: 80%;
+        flex-direction: column;
+        background-color: #FFBF69;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .header__menu ul.slide-menu{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+
     .hero{
         height: 350px;
     }
