@@ -1,0 +1,483 @@
+/******************************************************************
+  Template Name: Play Popit
+  Description: Children's game - Shop template
+  Author : Muhammad Harun
+  Created : Muhammad Harun
+******************************************************************/
+
+*,
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    overflow-x:hidden;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    position: fixed;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+}
+
+/* Header Menu */
+.header__logo span{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.header__logo a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 80px;
+}
+
+.header__menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px;
+    width: 30%;
+}
+
+.header__menu ul li{
+    list-style: none;
+}
+
+.header__menu ul li a{
+    font-size: 1em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header__menu ul li a:hover{
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Hamburger Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 3px;
+}
+
+/* Hero Slider / Carousel */
+.hero{
+    background-color: #FFBF69;
+    position: relative;
+    top: 0px;
+    z-index: -9999;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero__slider{
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+}
+
+.hero__item{
+    width: 80%;
+    position: relative;
+}
+.hero__item img{
+    width: 100%;
+    z-index: -9999;
+}
+
+.hero__text{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 60%;
+}
+
+.hero__text h1{
+    font-weight: 900;
+    font-size: 7em;
+}
+
+.hero__text p{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    width: 90%;
+}
+
+.hero__text button{
+    margin-top: 55px;
+    font-weight: 600;
+    font-size: 26px;
+    color: #000000;
+    padding: 19px 64px;
+    background-color: #CBF3F0;
+    border: none;
+}
+
+.hero__text button:hover{
+    cursor: pointer;
+    background-color: #78e8d9;
+}
+
+/*About*/
+.about{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.about__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 104px 0px 90px;
+    gap: 15px;
+    width: 90%;
+    text-align: center;
+}
+
+.about__wrapper h2{
+    font-weight: 800;
+    font-size: 26px;
+}
+
+.about__wrapper p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 70%;
+}
+
+/*Product*/
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 175px 0px 100px;
+    background-color: #78e8d9;
+}
+
+.product__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 231px;
+}
+
+.product__item{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    grid-column: span 8;
+    margin: 10px 0;
+    position: relative;
+}
+
+.product__item img{
+    width: 160px;
+    height: 160px;
+}
+
+.product__item p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.product__item button{
+    padding: 10px 47px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    background-color: #FFBF69;
+    border: none;
+}
+
+/*Rules*/
+.rule{
+    width: 100%;
+}
+
+.rule__wrapper{
+    max-width: 90%;
+}
+
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero__text{
+        width: 50%;
+    }
+
+    .hero__text h1{
+        font-size: 5em;
+    }
+
+    .hero__text p{
+        font-size: 20px;
+    }
+
+    .hero__text button{
+        margin-top: 40px;
+        font-size: 20px;
+        padding: 15px 50px;
+    }
+
+    .product__wrapper{
+        gap: 120px;
+    }
+
+    .about__wrapper p{
+        max-width: 80%;
+    }
+
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .header__menu ul{
+        width: 40%;
+    }
+
+    .hero{
+        height: 500px;
+    }
+
+    .hero__item{
+        top: 20px;
+    }
+
+    .hero__text{
+        width: 50%;
+    }
+
+    .hero__text h1{
+        font-size: 4em;
+    }
+
+    .hero__text p{
+        font-size: 18px;
+    }
+
+    .hero__text button{
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 15px 50px;
+    }
+
+    .product__wrapper{
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .product__item img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .product__item p{
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .product__item button{
+        padding: 10px 47px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        background-color: #FFBF69;
+        border: none;
+    }
+
+    .about__wrapper p{
+        max-width: 100%;
+    }
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    .header__menu ul{
+        right: 0;
+        top: 0;
+        height: 100vh;
+        justify-content: space-evenly;
+        z-index: -1;
+        align-items: center;
+        width: 80%;
+        flex-direction: column;
+        background-color: #FFBF69;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .header__menu ul.slide-menu{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+
+    .hero{
+        height: 450px;
+    }
+
+    .hero__item{
+        top: 50px;
+    }
+
+    .hero__text{
+        top: 30%;
+        width: 70%;
+    }
+
+    .hero__text h1{
+        font-size: 2em;
+    }
+
+    .hero__text p{
+        font-weight: 400;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .hero__text button{
+        margin-top: 12px;
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+
+    .about__wrapper p{
+        max-width: 100%;
+    }
+
+    .product__wrapper{
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .product__item img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .product__item p{
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .product__item button{
+        padding: 10px 47px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        background-color: #FFBF69;
+        border: none;
+    }
+
+
+
+}
+
+/* Small Device = 320px */
+@media only screen and (max-width: 479px) {
+    .hero{
+        height: 350px;
+    }
+
+    .hero__item{
+        top: 50px;
+    }
+
+    .hero__text{
+        top: 30%;
+    }
+
+    .hero__text{
+        width: 80%;
+    }
+
+    .hero__text h1{
+        font-size: 2em;
+    }
+
+    .hero__text p{
+        font-weight: 400;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .hero__text button{
+        margin-top: 12px;
+        font-size: 14px;
+        padding: 8px 30px;
+    }
+
+    .about__wrapper p{
+        max-width: 100%;
+    }
+
+    .product__wrapper{
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .product__item img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .product__item p{
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .product__item button{
+        padding: 10px 47px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        background-color: #FFBF69;
+        border: none;
+    }
+
+
+}
+
+
+
+
+
