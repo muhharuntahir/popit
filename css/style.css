@@ -15,7 +15,7 @@ body{
 }
 
 .header{
-    background-color: #FFBF69;
+    /*background-color: #FFBF69;*/
     display: flex;
     align-items: center;
     width: 100%;
@@ -91,7 +91,11 @@ body{
 
 /* Hero Slider / Carousel */
 .hero{
-    background-color: #FFBF69;
+    width: 100%;
+    position: relative;
+}
+
+.hero__wrapper{
     position: relative;
     top: 0px;
     z-index: -9999;
@@ -100,10 +104,21 @@ body{
     width: 100%;
 }
 
+.hero__wrapper-orange{
+    background-color: #FFBF69;
+}
+
+.hero__wrapper-red{
+    background-color: #FC2E20;
+}
+
+
 .hero__slider{
     display: flex;
     justify-content: center;
     max-width: 90%;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .hero__item{
@@ -148,6 +163,36 @@ body{
 .hero__text button:hover{
     cursor: pointer;
     background-color: #78e8d9;
+}
+
+.hero .navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero .navigation .prev, .hero .navigation .next{
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,0,0.2);
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.hero .navigation .prev:hover, .hero .navigation .next:hover{
+    background: rgba(0,0,0,1);
+}
+
+@keyframes fade {
+    from{opacity: 0.3}
+    to {opacity: 1}
 }
 
 /*About*/
@@ -350,6 +395,11 @@ body{
         max-width: 80%;
     }
 
+    .hero .navigation .prev, .hero .navigation .next{
+        font-size: 18px;
+        padding: 13px;
+    }
+
 }
 
 /* Tablet Device = 768px */
@@ -358,12 +408,13 @@ body{
         width: 40%;
     }
 
-    .hero{
+    .hero__wrapper{
         height: 500px;
     }
 
     .hero__item{
         top: 20px;
+        height: 500px;
     }
 
     .hero__text{
@@ -451,12 +502,18 @@ body{
         width: 100%
     }
 
+    .hero .navigation .prev, .hero .navigation .next{
+        font-size: 15px;
+        padding: 10px;
+    }
+
 }
 
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px){
     .header{
         position: static;
+        background-color: #FFFFFF;
     }
 
     .header__menu ul{
@@ -484,12 +541,13 @@ body{
         display: flex;
     }
 
-    .hero{
+    .hero__wrapper{
         height: 400px;
     }
 
     .hero__item{
         top: 30px;
+        height: 400px;
     }
 
     .hero__text{
@@ -623,6 +681,11 @@ body{
         font-size: 18px;
     }
 
+    .hero .navigation .prev, .hero .navigation .next{
+        font-size: 12px;
+        padding: 7px;
+    }
+
 }
 
 /* Small Device = 320px */
@@ -656,12 +719,13 @@ body{
         display: flex;
     }
 
-    .hero{
+    .hero__wrapper{
         height: 350px;
     }
 
     .hero__item{
         top: 50px;
+        height: 350px;
     }
 
     .hero__text{
@@ -796,6 +860,11 @@ body{
         color: #FFFFFF;
         font-weight: 600;
         font-size: 18px;
+    }
+
+    .hero .navigation .prev, .hero .navigation .next{
+        font-size: 11px;
+        padding: 6px;
     }
 
 
