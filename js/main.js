@@ -1,3 +1,10 @@
+window.addEventListener('scroll', function (){
+    if(window ){
+        const header = document.querySelector(".header");
+        header.classList.toggle("orange",window.scrollY > 400);
+    }
+});
+
 const menuToggle = document.querySelector(".menu-toggle");
 const navBar = document.querySelector('.header__menu ul');
 
@@ -29,3 +36,4 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
 }
+
