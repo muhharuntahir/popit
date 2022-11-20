@@ -7,14 +7,14 @@
 
 *,
 html,
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     width: 100%;
@@ -28,23 +28,23 @@ body{
     background-color: #FFBF69;
 }
 
-.container{
+.container {
     display: flex;
     width: 90%;
 }
 
 /* Header Menu */
-.header__logo span{
+.header__logo span {
     font-size: 1.2em;
     font-weight: 700;
 }
 
-.header__logo a{
+.header__logo a {
     text-decoration: none;
     color: #000000;
 }
 
-.header__menu{
+.header__menu {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -52,7 +52,7 @@ body{
     height: 80px;
 }
 
-.header__menu ul{
+.header__menu ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,30 +61,30 @@ body{
     width: 30%;
 }
 
-.header__menu ul li{
+.header__menu ul li {
     list-style: none;
 }
 
-.header__menu ul li a{
+.header__menu ul li a {
     font-size: 1em;
     color: #000000;
     text-decoration: none;
 }
 
-.header__menu ul li a:hover{
+.header__menu ul li a:hover {
     color: #000000;
     font-weight: 600;
 }
 
 /* Hamburger Menu */
-.menu-toggle{
+.menu-toggle {
     display: none;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
 }
 
-.menu-toggle span{
+.menu-toggle span {
     display: block;
     width: 28px;
     height: 3px;
@@ -93,12 +93,12 @@ body{
 }
 
 /* Hero Slider / Carousel */
-.hero{
+.hero {
     width: 100%;
     position: relative;
 }
 
-.hero__wrapper{
+.hero__wrapper {
     position: relative;
     top: 0px;
     z-index: -9999;
@@ -107,16 +107,16 @@ body{
     width: 100%;
 }
 
-.hero__wrapper-orange{
+.hero__wrapper-orange {
     background-color: #FFBF69;
 }
 
-.hero__wrapper-red{
+.hero__wrapper-red {
     background-color: #FC2E20;
 }
 
 
-.hero__slider{
+.hero__slider {
     display: flex;
     justify-content: center;
     max-width: 90%;
@@ -124,28 +124,29 @@ body{
     animation-duration: 1.5s;
 }
 
-.hero__item{
+.hero__item {
     width: 80%;
     position: relative;
 }
-.hero__item img{
+
+.hero__item img {
     width: 100%;
     z-index: -9999;
 }
 
-.hero__text{
+.hero__text {
     position: absolute;
     top: 20%;
     left: 0;
     width: 60%;
 }
 
-.hero__text h1{
+.hero__text h1 {
     font-weight: 900;
     font-size: 7em;
 }
 
-.hero__text p{
+.hero__text p {
     font-weight: 600;
     font-size: 26px;
     line-height: 32px;
@@ -153,7 +154,7 @@ body{
     width: 90%;
 }
 
-.hero__text button{
+.hero__text button {
     margin-top: 55px;
     font-weight: 600;
     font-size: 26px;
@@ -163,48 +164,53 @@ body{
     border: none;
 }
 
-.hero__text button:hover{
+.hero__text button:hover {
     cursor: pointer;
     background-color: #78e8d9;
 }
 
-.hero .navigation{
+.hero .navigation {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.hero .navigation .prev, .hero .navigation .next{
+.hero .navigation .prev, .hero .navigation .next {
     cursor: pointer;
     padding: 16px;
     font-weight: bold;
     font-size: 20px;
     color: white;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     user-select: none;
     transition: 0.6s ease;
 }
 
-.hero .navigation .prev:hover, .hero .navigation .next:hover{
-    background: rgba(0,0,0,1);
+.hero .navigation .prev:hover, .hero .navigation .next:hover {
+    background: rgba(0, 0, 0, 1);
 }
 
 @keyframes fade {
-    from{opacity: 0.3}
-    to {opacity: 1}
+    from {
+        opacity: 0.3
+    }
+    to {
+        opacity: 1
+    }
 }
 
 /*About*/
-.about{
+.about {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.about__wrapper{
+
+.about__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,12 +221,12 @@ body{
     z-index: -999;
 }
 
-.about__wrapper h2{
+.about__wrapper h2 {
     font-weight: 800;
     font-size: 26px;
 }
 
-.about__wrapper p{
+.about__wrapper p {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -228,7 +234,7 @@ body{
 }
 
 /*Product*/
-.product{
+.product {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,13 +242,13 @@ body{
     background-color: #78e8d9;
 }
 
-.product__wrapper{
+.product__wrapper {
     display: flex;
     align-items: center;
     gap: 231px;
 }
 
-.product__item{
+.product__item {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -253,17 +259,17 @@ body{
     position: relative;
 }
 
-.product__item img{
+.product__item img {
     width: 160px;
     height: 160px;
 }
 
-.product__item p{
+.product__item p {
     font-weight: 500;
     font-size: 18px;
 }
 
-.product__item button{
+.product__item button {
     padding: 10px 47px;
     font-weight: 500;
     font-size: 18px;
@@ -273,30 +279,30 @@ body{
 }
 
 /*Rules*/
-.rule{
+.rule {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.rule__background{
+.rule__background {
     width: 80%;
     position: absolute;
     z-index: -1;
 }
 
-.rule__wrapper{
+.rule__wrapper {
     max-width: 90%;
     padding-top: 103px;
     padding-bottom: 15px;
 }
 
-.rule__content{
+.rule__content {
     display: flex;
     justify-content: space-between;
 }
 
-.rule__text{
+.rule__text {
     margin-top: 95px;
     max-width: 50%;
     display: flex;
@@ -307,23 +313,23 @@ body{
     margin-right: 30px;
 }
 
-.rule__text h2{
+.rule__text h2 {
     font-weight: 800;
     font-size: 26px;
 }
 
-.rule__text p{
+.rule__text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
 
-.rule__content img{
+.rule__content img {
     width: 475px;
 }
 
 /* Footer */
-.footer{
+.footer {
     margin-top: 150px;
     width: 100%;
     background-color: #333333;
@@ -333,7 +339,7 @@ body{
     align-items: center;
 }
 
-.footer__wrapper{
+.footer__wrapper {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -342,7 +348,7 @@ body{
 }
 
 
-.footer__wrapper ul{
+.footer__wrapper ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -351,17 +357,17 @@ body{
     width: 75%;
 }
 
-.footer__wrapper ul li{
+.footer__wrapper ul li {
     list-style: none;
 }
 
-.footer__wrapper ul li a{
+.footer__wrapper ul li a {
     font-size: 1em;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.footer__logo a{
+.footer__logo a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 600;
@@ -372,33 +378,33 @@ body{
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 /* Medium Device = 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .hero__text{
+    .hero__text {
         width: 50%;
     }
 
-    .hero__text h1{
+    .hero__text h1 {
         font-size: 5em;
     }
 
-    .hero__text p{
+    .hero__text p {
         font-size: 20px;
     }
 
-    .hero__text button{
+    .hero__text button {
         margin-top: 40px;
         font-size: 20px;
         padding: 15px 50px;
     }
 
-    .product__wrapper{
+    .product__wrapper {
         gap: 120px;
     }
 
-    .about__wrapper p{
+    .about__wrapper p {
         max-width: 80%;
     }
 
-    .hero .navigation .prev, .hero .navigation .next{
+    .hero .navigation .prev, .hero .navigation .next {
         font-size: 18px;
         padding: 13px;
     }
@@ -406,54 +412,54 @@ body{
 }
 
 /* Tablet Device = 768px */
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .header__menu ul{
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header__menu ul {
         width: 40%;
     }
 
-    .hero__wrapper{
+    .hero__wrapper {
         height: 500px;
     }
 
-    .hero__item{
+    .hero__item {
         top: 20px;
         height: 500px;
     }
 
-    .hero__text{
+    .hero__text {
         width: 50%;
     }
 
-    .hero__text h1{
+    .hero__text h1 {
         font-size: 4em;
     }
 
-    .hero__text p{
+    .hero__text p {
         font-size: 18px;
     }
 
-    .hero__text button{
+    .hero__text button {
         margin-top: 30px;
         font-size: 20px;
         padding: 15px 50px;
     }
 
-    .product__wrapper{
+    .product__wrapper {
         flex-direction: column;
         gap: 70px;
     }
 
-    .product__item img{
+    .product__item img {
         width: 250px;
         height: 250px;
     }
 
-    .product__item p{
+    .product__item p {
         font-weight: 500;
         font-size: 18px;
     }
 
-    .product__item button{
+    .product__item button {
         padding: 10px 47px;
         font-weight: 500;
         font-size: 18px;
@@ -462,50 +468,50 @@ body{
         border: none;
     }
 
-    .about__wrapper p{
+    .about__wrapper p {
         max-width: 100%;
     }
 
     /*Rules*/
-    .rule{
+    .rule {
         display: flex;
         width: 100%;
         justify-content: center;
     }
 
-    .rule__background{
+    .rule__background {
         position: absolute;
         z-index: -1;
     }
 
-    .rule__wrapper{
+    .rule__wrapper {
         max-width: 90%;
         padding-top: 103px;
         padding-bottom: 15px;
     }
 
-    .rule__content{
+    .rule__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .rule__text{
+    .rule__text {
         margin-top: 15px;
         max-width: 100%;
         margin-right: 0px;
         margin-bottom: 30px;
     }
 
-    .rule__text p{
+    .rule__text p {
         line-height: 24px;
     }
 
-    .rule__content img{
+    .rule__content img {
         width: 100%
     }
 
-    .hero .navigation .prev, .hero .navigation .next{
+    .hero .navigation .prev, .hero .navigation .next {
         font-size: 15px;
         padding: 10px;
     }
@@ -513,13 +519,13 @@ body{
 }
 
 /* Wide Mobile = 480px */
-@media only screen and (max-width: 767px){
-    .header{
+@media only screen and (max-width: 767px) {
+    .header {
         position: static;
         background-color: #FFFFFF;
     }
 
-    .header__menu ul{
+    .header__menu ul {
         position: absolute;
         right: 0;
         top: 0;
@@ -535,66 +541,66 @@ body{
         opacity: 0;
     }
 
-    .header__menu ul.slide-menu{
+    .header__menu ul.slide-menu {
         opacity: 1;
         transform: translateX(0);
     }
 
-    .menu-toggle{
+    .menu-toggle {
         display: flex;
     }
 
-    .hero__wrapper{
+    .hero__wrapper {
         height: 400px;
     }
 
-    .hero__item{
+    .hero__item {
         top: 30px;
         height: 400px;
     }
 
-    .hero__text{
+    .hero__text {
         top: 30%;
         width: 70%;
     }
 
-    .hero__text h1{
+    .hero__text h1 {
         font-size: 2em;
     }
 
-    .hero__text p{
+    .hero__text p {
         font-weight: 400;
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;
     }
 
-    .hero__text button{
+    .hero__text button {
         margin-top: 12px;
         font-size: 14px;
         padding: 8px 30px;
     }
 
-    .about__wrapper p{
+    .about__wrapper p {
         max-width: 100%;
     }
 
-    .product__wrapper{
+    .product__wrapper {
         flex-direction: column;
         gap: 70px;
     }
 
-    .product__item img{
+    .product__item img {
         width: 150px;
         height: 150px;
     }
 
-    .product__item p{
+    .product__item p {
         font-weight: 500;
         font-size: 18px;
     }
 
-    .product__item button{
+    .product__item button {
         padding: 10px 47px;
         font-weight: 500;
         font-size: 18px;
@@ -604,52 +610,51 @@ body{
     }
 
     /*Rules*/
-    .rule{
+    .rule {
         display: flex;
         width: 100%;
         justify-content: center;
     }
 
-    .rule__background{
+    .rule__background {
         position: absolute;
         z-index: -1;
     }
 
-    .rule__wrapper{
+    .rule__wrapper {
         max-width: 90%;
         padding-top: 103px;
         padding-bottom: 15px;
     }
 
-    .rule__content{
+    .rule__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .rule__text{
+    .rule__text {
         margin-top: 15px;
         max-width: 100%;
         margin-right: 0px;
         margin-bottom: 30px;
     }
 
-    .rule__text p{
+    .rule__text p {
         line-height: 24px;
     }
 
-    .rule__content img{
+    .rule__content img {
         width: 100%
     }
 
     /*Footer*/
-
-    .footer{
+    .footer {
         flex-direction: column;
         padding: 30px;
     }
 
-    .footer__wrapper{
+    .footer__wrapper {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -659,32 +664,32 @@ body{
     }
 
 
-    .footer__wrapper ul{
+    .footer__wrapper ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 75%;
     }
 
-    .footer__wrapper ul li{
+    .footer__wrapper ul li {
         list-style: none;
         padding: 20px;
     }
 
-    .footer__wrapper ul li a{
+    .footer__wrapper ul li a {
         font-size: 1em;
         color: #FFFFFF;
         text-decoration: none;
     }
 
-    .footer__logo a{
+    .footer__logo a {
         text-decoration: none;
         color: #FFFFFF;
         font-weight: 600;
         font-size: 18px;
     }
 
-    .hero .navigation .prev, .hero .navigation .next{
+    .hero .navigation .prev, .hero .navigation .next {
         font-size: 12px;
         padding: 7px;
     }
@@ -693,11 +698,11 @@ body{
 
 /* Small Device = 320px */
 @media only screen and (max-width: 479px) {
-    .header{
+    .header {
         position: static;
     }
 
-    .header__menu ul{
+    .header__menu ul {
         position: absolute;
         right: 0;
         top: 0;
@@ -713,69 +718,69 @@ body{
         opacity: 0;
     }
 
-    .header__menu ul.slide-menu{
+    .header__menu ul.slide-menu {
         opacity: 1;
         transform: translateX(0);
     }
 
-    .menu-toggle{
+    .menu-toggle {
         display: flex;
     }
 
-    .hero__wrapper{
+    .hero__wrapper {
         height: 350px;
     }
 
-    .hero__item{
+    .hero__item {
         top: 50px;
         height: 350px;
     }
 
-    .hero__text{
+    .hero__text {
         top: 30%;
     }
 
-    .hero__text{
+    .hero__text {
         width: 80%;
     }
 
-    .hero__text h1{
+    .hero__text h1 {
         font-size: 2em;
     }
 
-    .hero__text p{
+    .hero__text p {
         font-weight: 400;
         font-size: 16px;
         font-weight: 400;
         line-height: 20px;
     }
 
-    .hero__text button{
+    .hero__text button {
         margin-top: 12px;
         font-size: 14px;
         padding: 8px 30px;
     }
 
-    .about__wrapper p{
+    .about__wrapper p {
         max-width: 100%;
     }
 
-    .product__wrapper{
+    .product__wrapper {
         flex-direction: column;
         gap: 70px;
     }
 
-    .product__item img{
+    .product__item img {
         width: 150px;
         height: 150px;
     }
 
-    .product__item p{
+    .product__item p {
         font-weight: 500;
         font-size: 18px;
     }
 
-    .product__item button{
+    .product__item button {
         padding: 10px 47px;
         font-weight: 500;
         font-size: 18px;
@@ -785,52 +790,51 @@ body{
     }
 
     /*Rules*/
-    .rule{
+    .rule {
         display: flex;
         width: 100%;
         justify-content: center;
     }
 
-    .rule__background{
+    .rule__background {
         position: absolute;
         z-index: -1;
     }
 
-    .rule__wrapper{
+    .rule__wrapper {
         max-width: 90%;
         padding-top: 103px;
         padding-bottom: 15px;
     }
 
-    .rule__content{
+    .rule__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .rule__text{
+    .rule__text {
         margin-top: 15px;
         max-width: 100%;
         margin-right: 0px;
         margin-bottom: 30px;
     }
 
-    .rule__text p{
+    .rule__text p {
         line-height: 24px;
     }
 
-    .rule__content img{
+    .rule__content img {
         width: 100%
     }
 
     /*Footer*/
-
-    .footer{
+    .footer {
         flex-direction: column;
         padding: 30px;
     }
 
-    .footer__wrapper{
+    .footer__wrapper {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -840,32 +844,32 @@ body{
     }
 
 
-    .footer__wrapper ul{
+    .footer__wrapper ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 75%;
     }
 
-    .footer__wrapper ul li{
+    .footer__wrapper ul li {
         list-style: none;
         padding: 20px;
     }
 
-    .footer__wrapper ul li a{
+    .footer__wrapper ul li a {
         font-size: 1em;
         color: #FFFFFF;
         text-decoration: none;
     }
 
-    .footer__logo a{
+    .footer__logo a {
         text-decoration: none;
         color: #FFFFFF;
         font-weight: 600;
         font-size: 18px;
     }
 
-    .hero .navigation .prev, .hero .navigation .next{
+    .hero .navigation .prev, .hero .navigation .next {
         font-size: 11px;
         padding: 6px;
     }
