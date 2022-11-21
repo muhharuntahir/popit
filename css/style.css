@@ -522,7 +522,6 @@ body {
 @media only screen and (max-width: 767px) {
     .header {
         position: fixed;
-        background-color: #FFFFFF;
     }
 
 
@@ -706,18 +705,19 @@ body {
 /* Small Device = 320px */
 @media only screen and (max-width: 479px) {
     .header {
-        position: static;
+        position: fixed;
     }
 
+
     .header__menu ul {
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         height: 100vh;
         justify-content: space-evenly;
-        z-index: -1;
+        z-index: -999;
         align-items: center;
-        width: 80%;
+        width: 50%;
         flex-direction: column;
         background-color: #FFBF69;
         transform: translateX(100%);

@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function () {
     if (window) {
         const header = document.querySelector(".header");
-        header.classList.toggle("orange", window.scrollY > 400);
+        header.classList.toggle("orange", window.scrollY > 200);
     }
 });
 
