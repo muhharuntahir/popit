@@ -62,7 +62,7 @@ body {
 }
 
 .header__menu ul li {
-    list-style: none;
+    text-decoration: none;
 }
 
 .header__menu ul li a {
@@ -539,6 +539,11 @@ body {
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
+    }
+
+    .header__menu ul li{
+        z-index: 999;
+        cursor: pointer;
     }
 
     .header__menu ul.slide-menu {
